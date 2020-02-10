@@ -24,6 +24,7 @@ public class Main {
     private Container c;
     private boolean rungame;
     private ImageIcon img;
+    private int h = 0;
     
     public Main(){
         initializeValues();
