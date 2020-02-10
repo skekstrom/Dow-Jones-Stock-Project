@@ -2,6 +2,7 @@
 import java.awt.BorderLayout;
 import java.awt.Container;
 import java.awt.Dimension;
+import java.awt.Toolkit;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -24,7 +25,7 @@ public class Main {
     private Container c;
     private boolean rungame;
     private ImageIcon img;
-    private int h = 0;
+    Dimension screenSize;
     
     public Main(){
         initializeValues();
@@ -39,6 +40,7 @@ public class Main {
     public void initializeValues(){
         gp = new GraphicsPanel();
         img = new ImageIcon("stockclipart.png");
+        screenSize = Toolkit.getDefaultToolkit().getScreenSize();
     }
     /**
      * @param null
